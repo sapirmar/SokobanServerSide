@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<!--<?import SokobanView.SokobanDisplayer?>  -->
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ServerWindowController">
+   <top>
+      <TableView fx:id="clientTable" prefHeight="429.0" prefWidth="465.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="status" prefWidth="123.0" text="Status" />
+            <TableColumn fx:id="portColumn" prefWidth="111.0" text="Port" />
+            <TableColumn fx:id="ipColumn" prefWidth="113.0" text="IP" />
+        </columns>
+      </TableView>
+   </top>
+   <right>
+      <Button mnemonicParsing="false" onAction="#close" prefHeight="37.0" prefWidth="70.0" text="Exit" textFill="#ae2222" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
