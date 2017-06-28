@@ -38,7 +38,7 @@ public class ServerWindowController implements Initializable, View, Observer {
 		portColumn.setCellValueFactory(new PropertyValueFactory<>("port"));
 		clientTable.setItems(clientData);
 		
-
+		
 	}
 
 	//getter and setters

@@ -4,10 +4,10 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.util.HashMap;
+
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
+
 import java.util.Observable;
 
 import javax.ws.rs.client.Client;
@@ -27,7 +27,11 @@ import model.items.Space;
 import model.items.Wall;
 import search.Action;
 import solver.SokobanSolver;
-
+/**
+ * The protocol between the client to the server
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class MyClientHandler extends Observable implements ClientHandler {
 	private ClientDetails clientInfo;
 

@@ -8,7 +8,11 @@ import javax.xml.bind.Binder;
 import javafx.collections.ObservableList;
 import model.ClientDetails;
 import model.Model;
-
+/**
+ * view model in MVVM pattern
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class MyViewModel extends Observable implements ViewModel,Observer {
 	private Model model;
 	private ObservableList<ClientDetails> data;

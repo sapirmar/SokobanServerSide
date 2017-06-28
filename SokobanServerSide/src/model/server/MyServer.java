@@ -11,7 +11,11 @@ import java.util.concurrent.Executors;
 
 import model.ClientDetails;
 import model.Model;
-
+/**
+ * Server to the Sokoban Game
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class MyServer extends Observable implements Server, Model, Observer {
 	public static final int PORT = 8787;
 	public static final String SERVERIP = "127.0.0.1";
@@ -25,7 +29,7 @@ public class MyServer extends Observable implements Server, Model, Observer {
 													// connected to the server
 	private int clientsCounter = 0;
 	private MyServer thisServer = this;
-
+	
 	public MyServer(int port) {
 		this.port = port;
 		allClientsList = new ArrayList<ClientDetails>();

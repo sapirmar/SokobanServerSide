@@ -1,7 +1,11 @@
 package model;
 
 import java.io.Serializable;
-
+/**
+ * client details class(connected client to server)
+ * @author Sapir Markel and Roee Sisso
+ *
+ */
 public class ClientDetails implements Serializable {
 	private int id; 
 	private String status;
