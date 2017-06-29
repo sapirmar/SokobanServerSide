@@ -27,6 +27,7 @@ import model.items.Space;
 import model.items.Wall;
 import search.Action;
 import solver.SokobanSolver;
+import search.Solution;
 /**
  * The protocol between the client to the server
  * @author Sapir Markel and Roee Sisso
@@ -43,8 +44,8 @@ public class MyClientHandler extends Observable implements ClientHandler {
 	}
 /**
  * handle the client 
- * @param input steam
- * @param output stream 
+ * @param inFromClient the input stream
+ * @param outToClient the output stream.
  */
 	@Override
 	public void handle(InputStream inFromClient, OutputStream outToClient,int idClient) throws Exception {

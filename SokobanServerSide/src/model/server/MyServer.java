@@ -63,8 +63,8 @@ public class MyServer extends Observable implements Server, Model, Observer {
 
 	}
 /**
- * remove client from the list
- * @param client id (int)
+ * remove client from the list .
+ * @param ID the client id. 
  */
 	@Override
 	public ClientDetails removeClient(int ID) {
@@ -83,7 +83,7 @@ public class MyServer extends Observable implements Server, Model, Observer {
 	}
 /**
  * add client to list
- * @param socket of the new client
+ * @param clientSocket Socket of the new client
  */
 	@Override
 	public ClientDetails addAclient(Socket clientSocket) {
